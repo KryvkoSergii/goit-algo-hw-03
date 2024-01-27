@@ -27,7 +27,7 @@ def copy_and_sort(source_dir, destination_dir):
             os.makedirs(destination_sub_dir, exist_ok=True)
             shutil.copy2(source, destination_sub_dir)
 
-        if os.path.isdir(entity):
+        if os.path.isdir(source):
             copy_and_sort(entity, destination_dir)
 
 
